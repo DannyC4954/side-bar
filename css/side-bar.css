@@ -1,0 +1,144 @@
+/* Default styling */
+* {
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+/* Side bar */
+.side-bar {
+    position: fixed;
+    width: 3%;
+    height: 100%;
+    padding: 1%;
+    background-color: #303030;
+    color: #fff;
+    border: 1px solid #000;
+}
+.side-top {
+    display: none;
+    margin: 0 0 0 0;
+    background-color: #181818;
+}
+.side-mid {
+    margin: 10px 0 25px 0;
+    text-align: center;
+}
+.side-element-menu {
+    display: none;
+    margin: 0 0 15px 0;
+    padding: 10px 0px;
+    border-radius: 4px;
+}
+.side-element {
+    display: block;
+    margin: 0 0 15px 0;
+    padding: 10px 0px;
+    border-radius: 4px;
+}
+.side-title {
+    display: none;
+}
+.chosen-section {
+    background-color: #181818;
+    color: #8970c2;
+}
+.side-element:hover {
+    cursor: pointer;
+    color: #8970c2;
+}
+
+/* Hover bar */
+.hover-bar {
+    display: none;
+    position: fixed;
+    margin-left: 5%;
+    width: 10%;
+    height: 100%;
+    padding: 1%;
+    background-color: #181818;
+    color: #fff;
+    border: 1px solid #000;
+}
+.hover-mid {
+    display: none;
+    margin: 10px 0 25px 0;
+}
+.active-hover {
+    display: block;
+}
+
+/* Main Content */
+.main-content {
+    margin: 0 0 0 6%;
+    width: 92%;
+    padding: 15px 0px 15px 15px;
+}
+.mc-extend {
+    margin: 0 0 0 18%;
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Side bar */
+    .side-bar {
+        display: block;
+        position: unset;
+        width: 100%;
+        padding: unset;
+        background-color: #303030;
+        color: #fff;
+        border: 1px solid #000;
+    }
+    .side-top {
+        display: block;
+        padding: 7px 15px;
+    }
+    .side-mid {
+        display: none;
+        text-align: unset;
+        margin: 0px;
+    }
+    .side-element-menu {
+        display: block;
+        margin: 0;
+    }
+    .side-element {
+        display: block;
+        margin: 0 0 0px 0;
+        padding: 10px 15px;
+        border-bottom: 1px solid #e8e8e8;
+        border-radius: 0px;
+    }
+    .side-title {
+        display: inline-block;
+        margin: 0 0 0 10px;
+    }
+    /* Hover bar */
+    .hover-bar {
+        z-index: 1;
+        right: 0;
+        top: 0;
+        padding: 15px;
+        width: 65%;
+        height: 100%;
+        border-radius: 4px;
+        overflow: auto;
+        background-color: #181818;
+        color: #fff;
+        box-shadow: 4px 4px 4px 4px #8970c2;
+    }
+    .hover-mid {
+        margin: 0px 0 25px 0;
+    }
+    /* Main Content */
+    .main-content {
+        margin: 0;
+        width: unset;
+        padding: 15px;
+    }
+    .mc-extend {
+        margin: 0;
+        width: unset;
+        padding: 15px;
+    }
+}

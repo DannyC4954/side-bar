@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Side Bar Tutorial</title>
+    <link rel="stylesheet" href="css/side-bar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/javascript.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Side bar -->
+        <div class="side-bar">
+          <div class="side-top">
+            <a class="side-element-menu" id="menu-btn">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div class="side-mid">
+            <a class="side-element" data-hover="dashboard">
+              <i class="fa-solid fa-house"></i>
+              <span class="side-title">Dashboard</span>
+            </a>
+            <a class="side-element" data-hover="posts">
+              <i class="fa-regular fa-pen-to-square"></i>
+              <span class="side-title">Posts</span>
+            </a>
+            <a class="side-element" data-hover="media">
+              <i class="fa-regular fa-image"></i>
+              <span class="side-title">Media</span>
+            </a>
+            <a class="side-element" data-hover="messages">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="side-title">Messages</span>
+            </a>
+            <a class="side-element" data-hover="users">
+              <i class="fa-solid fa-users"></i>
+              <span class="side-title">Users</span>
+            </a>
+            <a class="side-element" data-hover="settings">
+              <i class="fa-solid fa-gear"></i>
+              <span class="side-title">Settings</span>
+            </a>
+            <a class="side-element">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span class="side-title">Logout</span>
+            </a>
+          </div>
+        </div>
+        <!-- Hoverable bar -->
+        <div class="hover-bar">
+          <div class="hover-mid" id="dashboard">
+            Dashboard
+          </div>
+          <div class="hover-mid" id="posts">
+            Posts
+          </div>
+          <div class="hover-mid" id="media">
+            Media
+          </div>
+          <div class="hover-mid" id="messages">
+            Messages
+          </div>
+          <div class="hover-mid" id="users">
+            Users
+          </div>
+          <div class="hover-mid" id="settings">
+            Settings
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="main-content">
+      <h1>Main Content</h1>
+      <p>Lorem ipsum</p>
+    </section>
+    <footer>
+    </footer>
+  </body>
+</html>
